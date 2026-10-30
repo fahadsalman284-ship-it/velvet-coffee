@@ -1,0 +1,6 @@
+import Link from "next/link";
+import { ArrowDown, ArrowRight } from "lucide-react";
+import PageFrame from "../../components/PageFrame";
+import ScenePanel from "../../components/ScenePanel";
+export const metadata = { title: "The Velvet Experience | Velvet Coffee", description: "Explore the Velvet Coffee ritual through origin, roast, aroma and brew." };
+export default function ExperiencePage() { return <PageFrame dark><section className="experience-page"><div className="experience-content"><p className="eyebrow">VELVET COFFEE PRESENTS</p><h1>Not just coffee.<br/><em>A world to slow down in.</em></h1><p>A little depth, a little warmth, and a cup worth taking your time over.</p><Link className="button button-light" href="/">ENTER VELVET <ArrowRight size={15}/></Link></div><ScenePanel/><a href="#experience-note" className="experience-scroll"><span>TAKE A CLOSER LOOK</span><ArrowDown size={14}/></a></section><section id="experience-note" className="experience-note"><p className="eyebrow">A MOMENT, MADE OF MANY</p><p>Origin, roast, aroma, brew. Every part has a hand in the cup. Find the one that speaks to you.</p><Link href="/coffee" className="text-link">DISCOVER THE COFFEE <ArrowRight size={15}/></Link></section></PageFrame>; }
